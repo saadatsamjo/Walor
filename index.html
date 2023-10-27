@@ -10,8 +10,9 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="FRONT/assets/img/favicon.png" rel="icon">
+  <link href="FRONT/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,49 +20,49 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="FRONT/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="FRONT/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="FRONT/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="FRONT/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="FRONT/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!--  Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="FRONT/assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
-
-  <!-- End Top Bar -->
-
-  <header id="header" class="header d-flex align-items-center">
-
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <!-- <h1>Impact<span>.</span></h1> -->
-        <img src="assets/img/logo_no_bg.png" alt="" class="logo">
+  <div id="some-id" class="some-div">
+    <div class="hide-nav">
+      <a onclick="hideNavbar();">
+        <i id="hide-nav-icon" class="fa fa-times" ></i>
       </a>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">SMEs</a></li>
-          <li><a href="#portfolio">Community Groups</a></li>
-          <li><a href="#portfolio">FAQ</a></li>
-          <li><a href="#portfolio">Contact Us</a></li>
-          <li><a href="#contact">Get Started</a></li>
-        </ul>
-      </nav><!-- .navbar -->
-
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-
     </div>
-  </header><!-- End Header -->
-  <!-- End Header -->
+
+    <ul class="my-nav-ul">
+      <li class="side-menu-link"><a href="">My groups</a></li>
+      <li class="side-menu-link"><a href="">My statement</a></li>
+      <li class="side-menu-link"><a href="">Deposit</a></li>
+      <li class="side-menu-link"><a href="">Notifications</a></li>
+      <li class="side-menu-link"><a href="">Loans</a></li>
+      <li class="side-menu-link"><a href="">Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="my-header">
+    <div class="logo-div">
+      <img id="my-logo" src="FRONT/assets/img/logo_no_bg.png" alt="">
+    </div>
+    <ul id="my-menu-links-ul">
+      
+      <li class="my-menu-link"><a href="">Home</a></li>
+      <li class="my-menu-link"><a href="">About</a></li>
+      <li class="my-menu-link"><a href="">Community groups</a></li>
+      <li id="my-account" class="my-menu-link"><a href="javascript:void(0);" onclick="showNavbar();">My Account</a></li>
+
+    </ul>
+  </div>
+
+    
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero">
@@ -77,7 +78,7 @@
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2">
-          <img src="assets/img/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+          <img src="FRONT/assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
         </div>
       </div>
     </div>
@@ -121,6 +122,8 @@
   </section>
   <!-- End Hero Section -->
 
+
+
   <main id="main">
 
     <!-- ======= About Us Section ======= -->
@@ -134,7 +137,7 @@
 
         <div class="row gy-4">
           <div class="col-lg-6 about-us-subheader">
-            <img src="assets/img/2women.png" class="img-fluid rounded-4 mb-4" alt="">
+            <img src="FRONT/assets/img/2women.png" class="img-fluid rounded-4 mb-4" alt="">
             <h3> <span class="header-span">Transparency</span> <span class="header-span">Inclusion</span> <span class="header-span">Empowerment</span></h3>
             <p>At the Walor, we are guided by the principles of Transparency, Inclusion, and Empowerment. We believe that a transparent and accountable approach fosters trust and integrity in our operations. We are dedicated to including all members of the community, regardless of their background or circumstances, ensuring that no one is left behind. Our ultimate goal is to empower individuals and communities, allowing them to take control of their financial futures, and to create a world where financial opportunities are accessible to all.</p>
           </div>
@@ -148,7 +151,7 @@
               </p>
               <h3>How Walor Works</h3>
               <div class="position-relative mt-4">
-                <img src="assets/img/women.jpeg" class="img-fluid rounded-4" alt="">
+                <img src="FRONT/assets/img/women.jpeg" class="img-fluid rounded-4" alt="">
                 <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
               </div>
             </div>
@@ -167,50 +170,17 @@
 
         <div class="clients-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide slider-image"><img src="assets/img/clients/absa.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide slider-image"><img src="assets/img/clients/absa.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide slider-image"><img src="assets/img/clients/absa.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide slider-image"><img src="assets/img/clients/absa.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide slider-image"><img src="assets/img/clients/absa.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide slider-image"><img src="FRONT/assets/img/clients/absa.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide slider-image"><img src="FRONT/assets/img/clients/absa.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide slider-image"><img src="FRONT/assets/img/clients/absa.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide slider-image"><img src="FRONT/assets/img/clients/absa.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide slider-image"><img src="FRONT/assets/img/clients/absa.png" class="img-fluid" alt=""></div>
           </div>
         </div>
 
       </div>
-    </section><!-- End Clients Section -->
 
-    <!-- ======= Stats Counter Section ======= -->
-    <section id="stats-counter" class="stats-counter">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4 align-items-center">
-
-          <div class="col-lg-6">
-            <img src="assets/img/stats-img.svg" alt="" class="img-fluid">
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="stats-item d-flex align-items-center">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> consequuntur quae diredo para mesta</p>
-            </div><!-- End Stats Item -->
-
-            <div class="stats-item d-flex align-items-center">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-            </div><!-- End Stats Item -->
-
-            <div class="stats-item d-flex align-items-center">
-              <span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-            </div><!-- End Stats Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Stats Counter Section -->
+    
 
 <!-- ======= Our Services Section ======= -->
 <section id="services" class="services sections-bg">
@@ -278,7 +248,7 @@
           <div class="testimonial-wrap">
             <div class="testimonial-item">
               <div class="d-flex align-items-center">
-                <img src="assets/img/testimonials/testimonial1.png" class="testimonial-img flex-shrink-0" alt="Oluwakemi Adekunle">
+                <img src="FRONT/assets/img/testimonials/testimonial1.png" class="testimonial-img flex-shrink-0" alt="Oluwakemi Adekunle">
                 <div>
                   <h3>Oluwakemi Adekunle</h3>
                   <h4>Small Business Owner</h4>
@@ -300,7 +270,7 @@
           <div class="testimonial-wrap">
             <div class="testimonial-item">
               <div class="d-flex align-items-center">
-                <img src="assets/img/testimonials/testimonial2.png" class="testimonial-img flex-shrink-0" alt="Olatunji Adeyemi">
+                <img src="FRONT/assets/img/testimonials/testimonial2.png" class="testimonial-img flex-shrink-0" alt="Olatunji Adeyemi">
                 <div>
                   <h3>Olatunji Adeyemi</h3>
                   <h4>Farmer</h4>
@@ -322,7 +292,7 @@
           <div class="testimonial-wrap">
             <div class="testimonial-item">
               <div class="d-flex align-items-center">
-                <img src="assets/img/testimonials/testimonial3.jpeg" class="testimonial-img flex-shrink-0" alt="Ama Asante">
+                <img src="FRONT/assets/img/testimonials/testimonial3.jpeg" class="testimonial-img flex-shrink-0" alt="Ama Asante">
                 <div>
                   <h3>Ama Asante</h3>
                   <h4>Store Owner</h4>
@@ -344,7 +314,7 @@
           <div class="testimonial-wrap">
             <div class="testimonial-item">
               <div class="d-flex align-items-center">
-                <img src="assets/img/testimonials/testimonial4.jpeg" class="testimonial-img flex-shrink-0" alt="Kwame Bonsu">
+                <img src="FRONT/assets/img/testimonials/testimonial4.jpeg" class="testimonial-img flex-shrink-0" alt="Kwame Bonsu">
                 <div>
                   <h3>Kwame Bonsu</h3>
                   <h4>Live Stock Keeper</h4>
@@ -366,7 +336,7 @@
           <div class="testimonial-wrap">
             <div class="testimonial-item">
               <div class="d-flex align-items-center">
-                <img src="assets/img/testimonials/testimonial5.jpeg" class="testimonial-img flex-shrink-0" alt="Mariam Sow">
+                <img src="FRONT/assets/img/testimonials/testimonial5.jpeg" class="testimonial-img flex-shrink-0" alt="Mariam Sow">
                 <div>
                   <h3>Mariam Sow</h3>
                   <h4>Entrepreneur</h4>
@@ -392,10 +362,11 @@
 </section><!-- End Testimonials Section -->
 
 
-
+<div id="groups-div">
+  
     <!-- ======= Community Group Section ======= -->
-    <section id="portfolio" class="portfolio sections-bg">
-      <div class="container " data-aos="fade-up">
+    <section id="portfolio" class="portfolio zeportfolio sections-bg">
+      <div id="groups-container" class="container " data-aos="fade-up">
 
         <div class="section-header">
           <h2>Community Groups</h2>
@@ -416,29 +387,39 @@
 
           <div class="row gy-4 portfolio-container community-groups">
 
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
+            <div class="col-xl-4 col-md-6 portfolio-item filter-app group-item">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/womenrural.jpeg" class="img-fluid" alt=""></a>
+                <a href="FRONT/assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="FRONT/assets/img/portfolio/womenrural.jpeg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Dreamers Women Group</a></h4>
-                  <p>The Dreamers Women Group is a community of resilient women who are committed to helping one another succeed. We come together to make contributions, lend support, and raise our collective financial well-being. Our focus is on empowerment, and we welcome you to join us in achieving your dreams.</p>
+                  <h4><a href="FRONT/portfolio-details.html" title="More Details">Dreamers Women Group</a></h4>
+                  <p class="group-item-paragraph">The Dreamers Women Group is a community of resilient women who are committed to helping one another succeed. We come together to make contributions, lend support, and raise our collective financial well-being. Our focus is on empowerment, and we welcome you to join us in achieving your dreams.</p>
+                    <div class="green-div">
+                     <div class="number-of-members">
+                        <p class="members-count">10 Members</p>
+                      </div>
+                      <div class="group-creation-time">
+                        <p class="">Created 6 Months ago</p>
+                      </div>
+                      <a href="FRONT/apply-to-join-group.html"><button>Apply join</button></a>
+                    </div>
                 </div>
               </div>
             </div><!-- End groups Item -->
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-product">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/palmoilwomen.jpeg" class="img-fluid" alt=""></a>
+                <a href="FRONT/assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="FRONT/assets/img/portfolio/palmoilwomen.jpeg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Botwe Town Pig Farmers</a></h4>
+                  <h4><a href="FRONT/portfolio-details.html" title="More Details">Botwe Town Pig Farmers</a></h4>
                   <p>As the Botwe Town Pig Farmers, we're dedicated to sustainable farming and mutual assistance. Our community thrives on collective contributions, lending opportunities, and building a secure financial future for our members.We are currrently accepting new members who want to be part of our supportive network of farmers.</p>
                 </div>
               </div>
+              
             </div><!-- End groups Item -->
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/youths3.jpeg" class="img-fluid" alt=""></a>
+                <a href="FRONT/assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="FRONT/assets/img/portfolio/youths3.jpeg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">Tema Teachers Community</a></h4>
                   <p>The Accra Primary School Teachers Community is a gathering of educators who value solidarity and financial growth. We engage in the tradition of contributions and lending, ensuring our colleagues have access to the resources they need. Become a part of our teaching family and explore opportunities with us.</p>
@@ -450,7 +431,7 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/FISHERS.webp" class="img-fluid" alt=""></a>
+                <a href="assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="FRONT/assets/img/portfolio/FISHERS.webp" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">Kumas Fish Farmers group</a></h4>
                   <p>The Kumasi Fishermen's Community is a hub for fishermen who share a passion for responsible fishing and economic stability. Our community offers a platform for contributions, lending support, and achieving a sustainable livelihood. Join us to connect with like-minded fishermen and access financial growth</p>
@@ -460,7 +441,7 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-product">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/towngroup.webp" class="img-fluid" alt=""></a>
+                <a href="assets/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="FRONT/assets/img/portfolio/towngroup.webp" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">Cocoa Farmers Community Group</a></h4>
                   <p>The Super Farmers Community Group is all about promoting eco-friendly agriculture and mutual assistance. We celebrate collective contributions and lending practices that help our members succeed in sustainable farming. Be a part of our community to share in the growth of your farm and financial future.</p>
@@ -470,7 +451,7 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/branding-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/youths.jpeg" class="img-fluid" alt=""></a>
+                <a href="assets/img/portfolio/branding-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="FRONT/assets/img/portfolio/youths.jpeg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">Peer Empower Group</a></h4>
                   <p>At Peer Empower Group, we emphasize the strength of mutual support, resilience, and empowerment. We offer a supportive environment where members come together to make contributions, lend a hand, and grow financially. Join our group to experience the power of unity and personal growth.</p>
@@ -480,7 +461,7 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/womenbusiness.webp" class="img-fluid" alt=""></a>
+                <a href="assets/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="FRONT/assets/img/portfolio/womenbusiness.webp" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">Ada Sunshine Women's Collective</a></h4>
                   <p>The Ada Sunshine Women's Collective is a radiant community that embraces the warmth of unity. We are united in our mission to make contributions, lend support, and empower each other toward financial prosperity. Join our community for a brighter, more prosperous future.</p>
@@ -490,7 +471,7 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-product">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/youths2.jpeg" class="img-fluid" alt=""></a>
+                <a href="assets/img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="FRONT/assets/img/portfolio/youths2.jpeg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">Sunyani Sankofa Sisters</a></h4>
                   <p></br>The Sunyani Sankofa Sisters group embodies the spirit of "Sankofa" – learning from the past to create a better future. We gather to make contributions, lend a helping hand, and promote financial growth among our members. Connect with us to be part of this empowering journey.</p>
@@ -500,7 +481,7 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-branding">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/youths3.jpeg" class="img-fluid" alt=""></a>
+                <a href="assets/img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="FRONT/assets/img/portfolio/youths3.jpeg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">Tema Unity Women's Forum</a></h4>
                   <p>The Tema Unity Women's Forum is a forum where unity breeds strength. We believe in the power of mutual contributions, lending, and communal support to empower one another financially. Come be part of this close-knit community for an enriching and prosperous future.</p>
@@ -510,7 +491,7 @@
 
             <div class="col-xl-4 col-md-6 portfolio-item filter-books absa-card" data-filter="absa">
               <div class="portfolio-wrap">
-                <a href="assets/img/portfolio/books-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/absaghana.png" class="img-fluid" alt=""></a>
+                <a href="assets/img/portfolio/books-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="FRONT/assets/img/portfolio/absaghana.png" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">Absa Ghana</a></h4>
                   <p>As the official loans partner of our community groups, Absa Ghana plays a pivotal role in supporting our members' financial aspirations. By collaborating with Absa Ghana, our community groups gain access to tailored loans and financial solutions designed to meet their specific needs based on their credit.</p>
@@ -524,92 +505,21 @@
 
       </div>
     </section><!-- End Community Groups Section -->
+</div>
 
     <!-- ======= Call To Action Section ======= -->
     <section id="call-to-action" class="call-to-action">
       <div class="container text-center" data-aos="zoom-out">
-        <h3>Register A new Community</h3>
+        <h3>Register A new Community Group</h3>
+        <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a> -->
         <p> Are you looking to create a positive impact within your community? Join us today and start your journey of empowerment. Register your community group to access a world of opportunities for growth, support, and collaboration. We believe in the power of communities coming together to achieve common goals.</p>
-        <a class="cta-btn register-new-group-btn" href="#">Start Application</a>
-        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+        <a class="cta-btn register-new-group-btn" href="FRONT/new-group-register.html">Start Application</a>
       </div>
     </section><!-- End Call To Action Section -->
 
 
-    <!-- ======= Our Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Our Team</h2>
-          <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
-        </div>
-
-        <div class="row gy-4">
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <img src="assets/img/team/profile.jpeg" class="img-fluid" alt="">
-              <h4>Courtney</h4>
-              <span>hackathon task</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <img src="assets/img/team/profile.jpeg" class="img-fluid" alt="">
-              <h4>Christian</h4>
-              <span>hackathon task</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <img src="assets/img/team/profile.jpeg" class="img-fluid" alt="">
-              <h4>Samjo</h4>
-              <span>hackathon task</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="member">
-              <img src="assets/img/team/profile.jpeg" class="img-fluid" alt="">
-              <h4>John</h4>
-              <span>hackathon task</span>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div><!-- End Team Member -->
-
-        </div>
-
-      </div>
-    </section><!-- End Our Team Section -->
-
  <!-- ======= Frequently Asked Questions Section ======= -->
-<section id="faq" class="faq">
+ <section id="faq" class="faq">
   <div class="container" data-aos="fade-up">
 
     <div class="row gy-4">
@@ -706,6 +616,83 @@
 </section><!-- End Frequently Asked Questions Section -->
 
 
+<!-- ===========team section============ -->
+<!-- team section starts -->
+    <div class="our-team">
+      <div class="section-header team-header ">
+        <h2>Our Team</h2>
+        <div class="section-header">
+          <p id="team-paragraph">We are a dedicated team of blockchain experts, developers, business  and agriculture specialists committed to leveraging decentralized technology to empower smallholder farmers and SME's in Ghana.</p>
+        </div>
+      </div>
+      <div class="team-container">
+        <div class="team-member">
+          <img src="FRONT/assets/img/team/profile.jpeg" class="img-fluid" alt="">
+          <h4>Courtney</h4>
+          <span>hackathon task</span>
+          <div class="social member-social-icons">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="FRONT/assets/img/team/Patrick.jpeg" class="img-fluid" alt="">
+          <h4>Patrick</h4>
+          <span>hackathon task</span>
+          <div class="social member-social-icons">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="FRONT/assets/img/team/samjo.jpeg" class="img-fluid" alt="">
+          <h4>Samjo</h4>
+          <span>hackathon task</span>
+          <div class="social member-social-icons">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="FRONT/assets/img/team/profile.jpeg" class="img-fluid" alt="">
+          <h4>Courtney</h4>
+          <span>hackathon task</span>
+          <div class="social member-social-icons">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="FRONT/assets/img/team/John.jpeg" class="img-fluid" alt="">
+          <h4>John</h4>
+          <span>hackathon task</span>
+          <div class="social member-social-icons">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      
+    </div><!-- team section starts -->
+
+
+
+
+
 
 
     <!-- ======= Contact Section ======= -->
@@ -756,7 +743,7 @@
       </div>
 
       <div class="col-lg-8">
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+        <form action="FRONT/forms/contact.php" method="post" role="form" class="php-email-form">
           <div class="row">
             <div class="col-md-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -856,16 +843,16 @@
 <div id="preloader"></div>
 
 <!-- Vendor JS Files -->
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="FRONT/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="FRONT/assets/vendor/aos/aos.js"></script>
+<script src="FRONT/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="FRONT/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="FRONT/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="FRONT/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="FRONT/assets/vendor/php-email-form/validate.js"></script>
 
 <!-- Main JS File -->
-<script src="assets/js/main.js"></script>
+<script src="FRONT/assets/js/main.js"></script>
 
 </body>
 

@@ -319,3 +319,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+// navbar
+function showNavbar(){
+  let navbar = document.getElementById("some-id")
+  navbar.style.display = "block";
+}
+
+function hideNavbar() {
+  let navbar = document.getElementById("some-id");
+  navbar.style.display = "none";
+}
+
