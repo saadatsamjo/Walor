@@ -2923,6 +2923,7 @@ section {
   background-color: #009282; 
 }
 .side-menu-link a{
+  font-size: large;
   padding: 30px;
   color: white;
   margin-left: 30px;
