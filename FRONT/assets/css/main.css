@@ -2818,17 +2818,24 @@ section {
   color: #333; /* Hover icon color */
 }
 
-
+.group-item-paragraph{
+  padding-bottom: 30px;
+}
 
 .group-item{
+  /* margin-top: 100px; */
   position: relative;
 }
+
+
 
 .portfolio-info{
   position: relative;
 
 }
 .green-div{
+  /* text-align: center; */
+  padding: 10px;
   position: absolute;
   background-color:#009786;
   height: 50px;
@@ -2838,6 +2845,18 @@ section {
   right: 0;
   display: flex;
   align-items: center;
+}
+
+.green-div>a {
+  color: #ffffff;
+}
+
+.group-button{
+  width: 100px;
+  color: #009282;
+  background-color: #ffffff;
+  border: 1px #ffffff solid;
+  border-radius: 5px;
 }
 
 .members-count, .group-creation-time{
